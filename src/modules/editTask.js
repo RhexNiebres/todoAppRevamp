@@ -1,5 +1,5 @@
 // editTask.js
-export default function editTask(task) {
+export  function editTask(task) {
     // Check if task is defined
     if (!task) {
       console.error("No task provided for editing.");

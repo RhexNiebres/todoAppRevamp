@@ -1,4 +1,4 @@
-export default function deleteTask(task, activeFolder, saveFolders) {
+export function deleteTask(task, activeFolder, saveFolders) {
 
     const index = activeFolder.tasks.indexOf(task);
     if (index > -1) {

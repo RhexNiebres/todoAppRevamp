@@ -1,6 +1,6 @@
 import { Task } from '../index.js';
 
-export default function addTask(activeFolder, taskData, saveFolders, refreshTaskList) {
+export function addTask(activeFolder, taskData, saveFolders, refreshTaskList) {
 
     if (!activeFolder) {
       alert("Please select a folder to add tasks to.");
