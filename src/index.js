@@ -293,7 +293,7 @@
 
 import { addTask } from './modules/addTask.js'; 
 import { editTask } from './modules/editTask.js';
-import { deleteTask } from './/modules/deleteTask.js';
+import { deleteTask } from './modules/deleteTask.js';
 
 import './styles.css';
 
@@ -489,6 +489,12 @@ function displayTask(task) {
   deleteButton.textContent = "Delete";
   deleteButton.style.marginLeft = "10px";
   deleteButton.classList.add("deleteButton");
+
+  const deleteIcon = document.createElement("i");
+deleteIcon.classList.add("fas", "fa-trash-alt"); // Use the trash icon class
+
+// Append the icon to the delete button
+deleteButton.appendChild(deleteIcon);
 
   deleteButton.addEventListener("click", (event) => {
     event.stopPropagation();
